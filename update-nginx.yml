@@ -9,7 +9,6 @@
     - name: Create a new HTML file
       lineinfile:
         path: "/var/www/html/index.html"
-        regexp: '.*'
         line: "<html><body><h3> Updated by AWX at {{ ansible_date_time.iso8601 }} </h3></body></html>"
         owner: root
         group: root
