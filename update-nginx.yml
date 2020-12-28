@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
   
-    - name: Update repositories cache and install "foo" package
+    - name: Update repositories cache and install nginx
       apt:
         name: nginx
         update_cache: yes
