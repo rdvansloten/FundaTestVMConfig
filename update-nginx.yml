@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: Overwrite Nginx page
+      command: "echo 'Updated by AWX at {{ ansible_date_time.iso8601 }}' > /var/www/html/index.nginx-debian.html"
