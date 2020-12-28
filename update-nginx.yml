@@ -1,6 +1,12 @@
 ---
 - hosts: all
   tasks:
+  
+    - name: Update repositories cache and install "foo" package
+      apt:
+        name: nginx
+        update_cache: yes
+    
     - name: Destroy default page
       file:
         state: absent
